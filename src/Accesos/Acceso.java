@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 
-public class Acceso {
+public class Acceso extends Residente{
     private int id;
     private Residente residentes;
     private LocalDate Fecha;
