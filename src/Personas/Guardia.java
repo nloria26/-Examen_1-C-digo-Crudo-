@@ -58,7 +58,5 @@ public class Guardia {
         return "Persona{" + "cedula=" + cedula + ", nombre=" + nombre + ", turno=" + turno + ", zona_asignada=" + zona_asignada +'}';
     }
 
-   //en esta clase esta listo todo?
-    // no se que mas hacer D:
-   
+ //El mensaje que estaba aqui murio en la indiferencia
 }
