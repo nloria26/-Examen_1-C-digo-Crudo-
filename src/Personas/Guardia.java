@@ -12,7 +12,7 @@ public class Guardia {
     private String cedula;
     private String nombre;
     private String turno;
-    private String zonas_asignada;
+    private String zona_asignada;
 
     public Guardia(String cedula, String nombre, String turno, String zonas_asignada, String Día, String Tarde, String Noche, String Ingreso_Principal, String Sotano, String Torre, String Torre_Norte) {
         this.cedula = cedula;
@@ -20,9 +20,9 @@ public class Guardia {
         this.turno = Día;
         this.turno = Tarde;
         this.turno = Noche;
-        this.zonas_asignada = Ingreso_Principal;
-        this.zonas_asignada = Sotano;
-        this.zonas_asignada = Torre_Norte;
+        this.zona_asignada = Ingreso_Principal;
+        this.zona_asignada = Sotano;
+        this.zona_asignada = Torre_Norte;
     }
 
     public void setCedula(String cedula) {
@@ -37,8 +37,8 @@ public class Guardia {
         this.turno = turno;
     }
 
-    public void setZonas_asignada(String zonas_asignada) {
-        this.zonas_asignada = zonas_asignada;
+    public void setZona_asignada(String zona_asignada) {
+        this.zona_asignada = zona_asignada;
     }
 
     public String getNombre() {
@@ -49,8 +49,15 @@ public class Guardia {
         return turno;
     }
 
-    public String getZonas_asignada() {
-        return zonas_asignada;
+    public String getZona_asignada() {
+        return zona_asignada;
     }
-    
+
+    @Override
+    public String toString() {
+        return "Persona{" + "cedula=" + cedula + ", nombre=" + nombre + ", turno=" + turno + ", zona_asignada=" + zona_asignada +'}';
+    }
+
+   
+
 }
