@@ -4,6 +4,8 @@
  */
 package Personas;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author Student
@@ -35,10 +37,14 @@ public class Residente extends Persona{
     }
     
 
+    public String edadactual (String fechanacimiento, String edadactual){
+        (this.fechanacimiento - LocalDate.now(fechanacimiento))
+        return edadactual; 
+        }
 
-    public Residente(String fechanacimiento, String correo, String telefono, String nombre, String cedula) {
+    public Residente(String fechanacimiento, String correo, String telefono, String nombre, String cedula, String edadactual) {
         super(nombre, cedula);
-        this.fechanacimiento = fechanacimiento;
+        this.fechanacimiento = edadactual;
         this.correo = correo;
         this.telefono = telefono;
     }
